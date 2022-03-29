@@ -1,0 +1,110 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.carousel{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.slider{
+    width: 600%;
+    background-color: yellow;
+    height: 400px;
+    display: flex;
+    margin-left: -100%;
+    position: absolute;
+}
+.slider_child{
+    width: calc(100%/6);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider_child:nth-child(1){
+    background-image: url("https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.slider_child:nth-child(2){
+    background-image: url("https://images.pexels.com/photos/39855/lamborghini-brno-racing-car-automobiles-39855.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.slider_child:nth-child(3){
+    background-image: url("https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.slider_child:nth-child(4){
+    background-image: url("https://images.pexels.com/photos/752615/pexels-photo-752615.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.slider_child:nth-child(5){
+    background-image: url("https://images.pexels.com/photos/3422964/pexels-photo-3422964.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.slider_child:nth-child(6){
+    background-image: url("https://images.pexels.com/photos/39855/lamborghini-brno-racing-car-automobiles-39855.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.buttons{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: tomato; */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    padding: 0 15px;
+    z-index: 10;
+    
+}
+.button{
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.205);
+    /* color: black; */
+}
+
+
+.indicators{
+    width: 100%;
+    height: 50px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.indicator{
+    width: 15px;
+    height: 15px;
+    background-color:transparent;
+    border-radius:50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.indicator.active{
+    background-color: #FFf;
+}
+.indicator:hover{
+    cursor: pointer;
+    /* background-color:white; */
+}

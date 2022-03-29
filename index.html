@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <section class="carousel">
+        <div class="slider" id="slider">
+            <div class="slider_child"></div>
+            <div class="slider_child"></div>
+            <div class="slider_child"></div>
+            <div class="slider_child"></div>
+            <div class="slider_child"></div>
+            <div class="slider_child"></div>
+
+        </div>
+        <div class="buttons">
+            <div class="button" id="prev"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="button" id="next"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        <div class="indicators">
+
+            <div class="indicator active" id="ind1" onclick="indicate(1)"></div>
+            <div class="indicator" id="ind2" onclick="indicate(2)"></div>
+            <div class="indicator" id="ind3" onclick="indicate(3)"></div>
+            <div class="indicator" id="ind4" onclick="indicate(4)"></div>
+
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
